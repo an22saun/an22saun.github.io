@@ -17,13 +17,134 @@
       <a href="fun.html">Fun</a>
     </nav>
 
-    <h1>About Aiyanna</h1>
+    <style>
+      /** animation for header, "About Aiyana"*/
+      @-webkit-keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+          opacity: 0;
+        }
+
+        40% {
+          opacity: 0.6;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+          opacity: 0;
+        }
+
+        40% {
+          opacity: 0.6;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+    </style>
+    <style>
+      .tracking-in-expand-fwd {
+        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      }
+    </style>
+
+    <style>
+      .text-focus-in {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      }
+    </style>
+
+    <style>
+      @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <style>
+      .slide-in-fwd-left {
+        -webkit-animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+    </style>
+
+    <style>
+      @-webkit-keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <h1 class="tracking-in-expand-fwd"> About Aiyanna</h1>
   </header>
 
   <main>
-    <img src="images\unnamed.jpg" alt="A photo of me">
+    <img src="images\unnamed.jpg" alt="A photo of me" class=text-focus-in>
 
-    <p>
+    <p class=slide-in-fwd-left>
       My name is Aiyanna. I enjoy crafts, videogames, and gardening
       (although im not very good at it). I have made things ranging from regular tie-dye clothing
       to paper flowers, crochet stuffed animals (work in progress... they look a little deformed
@@ -31,20 +152,20 @@
       and much more.
     </p>
 
-    <h2>Favorite board games</h2>
+    <h2 class=slide-in-fwd-left>Favorite board games</h2>
 
-    <ul>
-      <li>Dungeons & Dragons</li>
-      <li>Risk</li>
-      <li>Monopoly</li>
+    <ul class=slide-in-fwd-left>
+      <li class=slide-in-fwd-left>Dungeons & Dragons</li>
+      <li class=slide-in-fwd-left>Risk</li>
+      <li class=slide-in-fwd-left>Monopoly</li>
     </ul>
 
-    <h2>My favourite games, in order</h2>
+    <h2 class=slide-in-fwd-left>My favourite games, in order</h2>
 
-    <ol>
-      <li>Minecraft</li>
-      <li>Roblox (current favourite game is 99 nights in the forest)</li>
-      <li>Mobile Legends</li>
+    <ol class=slide-in-fwd-left>
+      <li class=slide-in-fwd-left>Minecraft</li>
+      <li class=slide-in-fwd-left>Roblox (current favourite game is 99 nights in the forest)</li>
+      <li class=slide-in-fwd-left>Mobile Legends</li>
     </ol>
   </main>
   <footer>
