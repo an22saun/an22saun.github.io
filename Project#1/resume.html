@@ -17,7 +17,91 @@
             <a href="resume.html" aria-current="page">Resume</a>
         </nav>
 
-        <h1>Aiyanna Saunders</h1>
+        <style>
+            @-webkit-keyframes tracking-in-expand-fwd {
+                0% {
+                    letter-spacing: -0.5em;
+                    -webkit-transform: translateZ(-700px);
+                    transform: translateZ(-700px);
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 0.6;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes tracking-in-expand-fwd {
+                0% {
+                    letter-spacing: -0.5em;
+                    -webkit-transform: translateZ(-700px);
+                    transform: translateZ(-700px);
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 0.6;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+        </style>
+        <style>
+            .tracking-in-expand-fwd {
+                -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+        </style>
+
+        <style>
+            .slide-in-fwd-left {
+                -webkit-animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        </style>
+
+        <style>
+            @-webkit-keyframes slide-in-fwd-left {
+                0% {
+                    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+                    transform: translateZ(-1400px) translateX(-1000px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0) translateX(0);
+                    transform: translateZ(0) translateX(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes slide-in-fwd-left {
+                0% {
+                    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+                    transform: translateZ(-1400px) translateX(-1000px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0) translateX(0);
+                    transform: translateZ(0) translateX(0);
+                    opacity: 1;
+                }
+            }
+        </style>
+
+
+        <h1 class="tracking-in-expand-fwd">Aiyanna Saunders</h1>
         <p><em>Software Engineering Student</em></p>
     </header>
 
@@ -26,37 +110,35 @@
             <h2>Skills</h2>
 
             <ul>
-                <li>HTML/Java</li>
-                <li>JavaScript</li>
-                <li>Programming</li>
-                <li>SketchUp</li>
+                <li class=slide-in-fwd-left>HTML/Java</li>
+                <li class=slide-in-fwd-left>JavaScript</li>
+                <li class=slide-in-fwd-left>Programming</li>
+                <li class=slide-in-fwd-left>SketchUp</li>
             </ul>
         </section>
 
         <section>
-            <h2>Experience</h2>
+            <h2 class="tracking-in-expand-fwd">Experience</h2>
 
-            <h3>Legoland Associate/Ride Operator</h3>
+            <h3 class=slide-in-fwd-left>Legoland Associate/Ride Operator</h3>
 
-            <p>
+            <p class=slide-in-fwd-left>
                 <strong>Legoland</strong><br>
                 <time datetime="2021-05">May 2021</time>&ndash;Present
             </p>
 
             <ul>
-                <li>Maintain park upkeep, manage trash, clean bathrooms, etc.</li>
-                <li>
-                    Operate Rides in the park, assist in evacuations, etc.
-                </li>
-                <li>Handle sales, work register, put out product, markups, etc.</li>
+                <li class=slide-in-fwd-left>Maintain park upkeep, manage trash, clean bathrooms, etc.</li>
+                <li class=slide-in-fwd-left> Operate Rides in the park, assist in evacuations, etc.</li>
+                <li class=slide-in-fwd-left>Handle sales, work register, put out product, markups, etc.</li>
             </ul>
 
         </section>
 
         <section>
-            <h2>Education</h2>
+            <h2 class="tracking-in-expand-fwd">Education</h2>
 
-            <p>
+            <p class=slide-in-fwd-left>
                 <strong>Goshen High School Graduate,</strong>, <time>2024</time><br>
                 <em>Goshen High School, Goshen, NY</em>
             </p>
