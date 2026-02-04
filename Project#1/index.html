@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Aiyanna's Homepage</title>
   <link rel="stylesheet" href="css/simple.css">
+
+
 </head>
 
 <body>
@@ -17,13 +19,87 @@
       <a href="fun.html">Fun</a>
     </nav>
 
+    <style>
+      .text-focus-in {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      }
+    </style>
+
+    <style>
+      @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+    </style>
+
+
+    <style>
+      .slide-in-fwd-left {
+        -webkit-animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+    </style>
+    <style>
+      @-webkit-keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+
     <h1>Aiyanna's Homepage</h1>
   </header>
 
   <main>
-    <img src="images\zinnia-3518967_640.jpg" alt="Photograph of flowers.">
+    <img src="images\zinnia-3518967_640.jpg" alt="Photograph of flowers." class="text-focus-in">
 
-    <p>
+    <p class="slide-in-fwd-left">
       Welcome to my website! Here you can find out more about me,
       and check out some of the fun hobbies I am into.
     </p>
