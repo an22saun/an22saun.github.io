@@ -19,21 +19,24 @@
             can guess it in 10 turns or fewer. We'll tell you if your guess was too high or low.
         </p>
 
-        <div class="form">
-            <label for="guessField">Enter a guess: </label>
-            <input type="number" min="1" max="100" required id="guessField" class="guessField" />
-            <input type="submit" value="Submit guess" class="guessSubmit" />
-        </div>
-
-        <div>
-            <div class="resultParas">
-                <p class="guesses"></p>
-                <p class="lastResult"></p>
-                <p class="lowOrHi"></p>
+        <div class="mb-4">
+            <label for="guessField" class="form-label">Enter a guess:</label>
+            <div class="input-group">
+                <input type="number" min="1" max="100" required id="guessField" class="form-control guessField">
+                <button class="btn btn-primary guessSubmit" type="button">
+                    Submit guess
+                </button>
             </div>
-
-            <script src="numberGame.js" defer></script>
         </div>
+
+        <div class="resultParas mt-4">
+            <p class="guesses fw-bold"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi text-warning fw-semibold"></p>
+        </div>
+
+        <script src="numberGame.js" defer></script>
+    </div>
     </div>
 </body>
 
