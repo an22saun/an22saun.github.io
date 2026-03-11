@@ -1,12 +1,12 @@
-function hello(){
-    console.log("Hello from the other siiiiiide!");
-}
-
-setTimeout(hello, 1000);
 
 
-for(let i = 0; i < 5; i++){
-    setTimeout(function(){console.log(i)}, i*1000);
-}
-
-
+let timerId;
+let count = 0;
+document.getElementById("start").addEventListener("click", () => {
+    if(!timerId){
+        timerId = setInterval(() => {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }, 1000);
+    }
+})
