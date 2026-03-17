@@ -1,6 +1,6 @@
-document.getElementById("incomeForm").addEventListener("submit", function (e){
+document.getElementById("incomeForm").addEventListener("submit", function (e) {
     e.preventDefault();
-    
+
     //Get values
     const name = document.getElementById("sourceName").value;
     const amount = document.getElementById("amount").value;
