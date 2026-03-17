@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aiyanna's Homepage</title>
+  <link rel="stylesheet" href="css/simple.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="fun.html">Fun</a>
+    </nav>
+
+    <style>
+      .text-focus-in {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      }
+    </style>
+
+    <style>
+      @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+    </style>
+
+
+    <style>
+      .slide-in-fwd-left {
+        -webkit-animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+    </style>
+    <style>
+      @-webkit-keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-in-fwd-left {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateX(-1000px);
+          transform: translateZ(-1400px) translateX(-1000px);
+          opacity: 0;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <style>
+      @-webkit-keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+          opacity: 0;
+        }
+
+        40% {
+          opacity: 0.6;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+          opacity: 0;
+        }
+
+        40% {
+          opacity: 0.6;
+        }
+
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+    </style>
+    <style>
+      .tracking-in-expand-fwd {
+        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      }
+    </style>
+
+    <h1 class="tracking-in-expand-fwd">Aiyanna's Homepage</h1>
+  </header>
+
+  <main>
+    <img src="images\zinnia-3518967_640.jpg" alt="Photograph of flowers." class="text-focus-in">
+
+    <p class="slide-in-fwd-left">
+      Welcome to my website! Here you can find out more about me,
+      and check out some of the fun hobbies I am into.
+    </p>
+    <p class="notice">
+      <strong>Want to learn how to make a website like this?</strong><br> Check out the free web book <a
+        href="https://htmlforpeople.com/">HTML for People</a>. It's made for everyone and teaches you how to make a
+      webpage in a friendly, approachable way.
+    </p>
+  </main>
+  <footer>
+    <p>Made with love, and tears, by Aiyanna Saunders.</p>
+  </footer>
+</body>
+
+</html>
