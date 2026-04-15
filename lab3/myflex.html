@@ -28,11 +28,19 @@
             background: rebeccapurple;
         }
 
+
         .flex-item {
             width: 100px;
             height: 100px;
             color: white;
             font-size: 2em;
+            align-items: stretch;
+        }
+
+        .flex-item2 {
+            width: 1000;
+            height: 200;
+            background-color: grey;
         }
     </style>
 </head>
@@ -43,19 +51,22 @@
     </header>
     <main>
         <section class="flex-container">
-            <div class=" flex-item red">1</div>
-        </section>
-        <section class="flex-container">
-            <div class=" flex-item blue">2</div>
-        </section>
-        <section class="flex-container">
-            <div class=" flex-item green">3</div>
-        </section>
-        <section class="flex-container">            
-            <div class=" flex-item orange">4</div>
-        </section>
-        <section class="flex-container">            
-            <div class=" flex-item purple">5</div>
+            <div class="flex-item2 grey"></div>
+            <section class="flex-container">
+                <div class=" flex-item red">1</div>
+            </section>
+            <section class="flex-container">
+                <div class=" flex-item blue">2</div>
+            </section>
+            <section class="flex-container">
+                <div class=" flex-item green">3</div>
+            </section>
+            <section class="flex-container">
+                <div class=" flex-item orange">4</div>
+            </section>
+            <section class="flex-container">
+                <div class=" flex-item purple">5</div>
+            </section>
         </section>
     </main>
     <footer>
